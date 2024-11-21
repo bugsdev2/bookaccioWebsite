@@ -46,6 +46,14 @@
                 padding: 20px 0;
                 text-align: center;
             }
+            #download-btn {
+                border-color: var(--blue);
+                color: var(--blue);
+            }
+            #download-btn:hover {
+                background-color: var(--blue);
+                color: #f4f4f9;
+            }
         </style>
     </head>
     <body>
@@ -175,22 +183,24 @@
                 <div>
                     <h2 class="fw-bold">Get Bookaccio</h2>
                 </div>
-
                 <div>
-                    <button class="btn">
-                        <a
-                            class="btn"
-                            style="background-color: var(--blue); color: #f4f4f9"
-                            href="assets/releases/bookaccio_v0.0.5.apk"
-                        >
-                            Download Apk Directly
-                        </a>
+                    <a
+                        href="https://apt.izzysoft.de/fdroid/index/apk/com.bugsdev2.bookaccio"
+                        target="_blank"
+                        class="text-dark text-decoration-none"
+                    >
+                        <img
+                            style="width: 12.5rem"
+                            src="./assets/images/IzzyOnDroid.png"
+                            alt="get the app on the IzzyOnDroid"
+                        />
                         <sub>v.0.0.5</sub>
-                    </button>
+                    </a>
                 </div>
                 <div class="my-3">
                     <span class="fw-bold">OR</span>
                 </div>
+
                 <div>
                     <a
                         href="https://apkpure.com/p/com.bugsdev2.bookaccio"
@@ -204,6 +214,21 @@
                         />
                         <sub>v.0.0.5</sub>
                     </a>
+                </div>
+                <div class="my-3">
+                    <span class="fw-bold">OR</span>
+                </div>
+                <div>
+                    <button class="btn">
+                        <a
+                            class="btn"
+                            id="download-btn"
+                            href="assets/releases/bookaccio_v0.0.5.apk"
+                        >
+                            Download Apk Directly
+                        </a>
+                        <sub>v.0.0.5</sub>
+                    </button>
                 </div>
 
                 <!-- <div class="row justify-content-center">
